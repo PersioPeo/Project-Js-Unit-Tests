@@ -1,6 +1,6 @@
 /*
-  Dada uma função chamada createStudent que recebe como parâmetro um nome,
-  retorne um objeto que contenha duas chaves:
+  Dada uma função chamada createStudent que recebe como parâmetro um nome,*--*
+  retorne um objeto que contenha duas chaves:*--*
     (1) name, contendo o nome passado como parâmetro;
     (2) feedback, contendo uma função que retorna a frase 'Eita pessoa boa!' ao ser chamada.
 
@@ -15,6 +15,13 @@
     estudante.feedback() // Retorna: 'Eita pessoa boa!'
 */
 
-const createStudent = () => {};
+const createStudent = (nomeRecebido) => {
+    const estudante = {
+      name: nomeRecebido,
+      feedback: () => 'Eita pessoa boa!',
+      
+    };
+    return estudante;
+  };
 
 module.exports = createStudent;
